@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(167, 167, 163, 0.8); /* Transparent white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  height: 350px;
+}
+
+/* ... other styles ... */
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Add transform for lift-up effect */
+  box-shadow: 0 4px 6px rgba(105, 37, 3, 0.2); /* Added blue border shadow */
+}
+
+input:hover, select:hover {
+  border-color: #f67002;
+  transform: translateY(-2px); /* Lift up slightly on hover */
+}
+
+button {
+  background-color: #3e2612;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+  display: block;
+  margin: 0 auto; /* Center the button horizontally */
+ 
+}
+
+
+button:hover {
+  background-color: #ce7f25;
+}
+
+.forecast-container {
+  margin-top: 40px;
+  padding: 120px;
+  background-color: rgba(167, 167, 163, 0.8); /* Transparent white background */
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item {
+  margin-bottom: 35px;
+}
+.forecast-item pre {
+  line-height: 2.5;
+  font-size: 18px; /* Increase font size */
+  font-weight: 600; /* Thicker font weight */
+  color: #333030; /* Black color */
+}
+.forecast-item h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.forecast-item p {
+  margin: 0 0 15px; /* Add top and bottom margins */
+  padding: 5px; /* Add padding if desired */
+}

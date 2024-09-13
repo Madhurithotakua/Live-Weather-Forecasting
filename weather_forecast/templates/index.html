@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/static/style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather Forecast</title>
+</head>
+<style>
+	body{
+		background-repeat: no-repeat;
+		background-size:100% 100%;
+		background-attachment:fixed;
+	}
+</style>
+<body background="https://i.pinimg.com/originals/62/e4/12/62e412b19f22c7b87f004a2334a70743.jpg"></body>
+<body>
+  <h1>Weather Forecast</h1>
+  <form method="POST" action="/">
+    <label for="location">Enter location:</label>
+    <input type="text" id="location" name="location" required><br>
+
+    <label for="days">Select number of days (1-5):</label>
+    <input type="number" min="1" max="5" id="days" name="days" required><br>
+
+    <label for="units">Select Units:</label>
+    <select id="units" name="units">
+      <option value="metric">Metric (°C, m/s)</option>
+      <option value="imperial">Imperial (°F, mph)</option>
+    </select><br><br>
+
+    <button type="submit">Get Forecast</button>
+  </form>
+
+  {% if error_message %}
+    <p style="color: red;">{{ error_message }}</p>
+  {% endif %}
+</body>
+</html>
